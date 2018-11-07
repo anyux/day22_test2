@@ -14,7 +14,5 @@ def login(request):
     if request.method == "POST":
         form = UserModelForm(data=request.POST)
         if form.is_valid():
-            form.save()
             return HttpResponse("登陆成功")
-            return redirect('/login/list/')
     return render(request,"login.html",locals())
