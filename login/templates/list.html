@@ -14,8 +14,8 @@
                 <td>{{ item.name }}</td>
                 <td>{{ item.password }}</td>
                 <td>
-                    <a href="/login/edit/{{ item.id }}" class="btn">修改</a>
-                    <a href="/login/delete/{{ item.id }}" class="btn">删除</a>
+                    <a href="/login/edit/{{ item.id }}" class="btn"><i class="fa fa-edit" aria-hidden="true"></i>修改</a>
+                    <a href="/login/delete/{{ item.id }}" class="btn"><i class="fa fa-remove" aria-hidden="true"></i>删除</a>
                 </td>
             </tr>
         {% endfor %}
